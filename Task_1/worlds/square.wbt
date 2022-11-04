@@ -12,8 +12,8 @@ WorldInfo {
   title "iRobot Create"
 }
 Viewpoint {
-  orientation -0.39597147444416475 0.41182065316384703 0.8207376810249523 1.7983943212631472
-  position 0.9536067175484604 -10.72028071090923 13.1473012891207
+  orientation -0.32133795007000715 0.31497619721824016 0.8930464249022788 1.7035267658105115
+  position 0.7020087836120956 -14.820379348829455 11.481181000013729
   near 0.1
 }
 TexturedBackground {
@@ -29,8 +29,8 @@ CeilingLight {
   pointLightIntensity 6
 }
 DEF diff_robot Robot {
-  translation 0 0 0.039721
-  rotation 5.788330347526398e-06 -4.4091638469117035e-05 0.9999999990112113 0
+  translation -4 -4 0.0396733
+  rotation 0.0010328900154534997 -0.0038604600577579577 0.9999920149612989 0.00293736
   children [
     GPS {
     }
@@ -60,7 +60,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 0.06 0
-        rotation -0.4415818288491696 0.6344298745646029 -0.6344322049598089 3.9732526593784034
+        rotation -0.44158182884916913 0.6344298745646034 -0.6344322049598088 3.973252659378404
         children [
           DEF WHEEL Shape {
             appearance PBRAppearance {
@@ -93,7 +93,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 -0.06 0
-        rotation -0.8951776073943921 -0.315163704694613 0.31516486235432145 4.601877800397627
+        rotation -0.8951776073943921 -0.3151637046946132 0.31516486235432145 4.601877800397628
         children [
           USE WHEEL
         ]
@@ -116,7 +116,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 0.06 0
-        rotation -0.5264189011574351 0.6011990041601477 -0.6012012124913301 4.110706966112106
+        rotation -0.5264189011574352 0.6011990041601477 -0.60120121249133 4.110706966112106
         children [
           USE WHEEL
         ]
@@ -139,7 +139,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 -0.06 0
-        rotation -0.8356158958979291 -0.3884230722746805 0.388424499030892 4.53375674080102
+        rotation -0.8356158958979291 -0.38842307227468126 0.3884244990308919 4.533756740801022
         children [
           USE WHEEL
         ]
@@ -217,10 +217,9 @@ Robot {
       children [
         Shape {
           appearance PBRAppearance {
-            baseColor 1 0.6 1
             baseColorMap ImageTexture {
               url [
-                "textures/black.png"
+                "textures/square.png"
               ]
             }
             roughness 0.5

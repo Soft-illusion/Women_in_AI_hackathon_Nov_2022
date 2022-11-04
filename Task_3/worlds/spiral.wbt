@@ -12,8 +12,8 @@ WorldInfo {
   title "iRobot Create"
 }
 Viewpoint {
-  orientation 0.016604232126773477 0.9985849377519164 0.050521496122753834 1.5817519738854628
-  position 0.4485965548841024 -1.1979869695944054 16.245669405679944
+  orientation 0.06283067523613473 0.9953166745767685 0.07346443737492314 0.803710092702881
+  position -14.01736602340239 -1.4118970262254908 13.473557933486976
   near 0.1
 }
 TexturedBackground {
@@ -60,7 +60,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 0.06 0
-        rotation -0.4415818288491696 0.634429874564603 -0.6344322049598087 3.973252659378404
+        rotation -0.4415818288491695 0.6344298745646036 -0.6344322049598085 3.973252659378405
         children [
           DEF WHEEL Shape {
             appearance PBRAppearance {
@@ -93,7 +93,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 -0.06 0
-        rotation -0.8951776073943921 -0.315163704694613 0.31516486235432145 4.601877800397627
+        rotation -0.8951776073943917 -0.3151637046946144 0.3151648623543214 4.60187780039763
         children [
           USE WHEEL
         ]
@@ -116,7 +116,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 0.06 0
-        rotation -0.5264189011574351 0.6011990041601477 -0.6012012124913301 4.110706966112106
+        rotation -0.5264189011574351 0.6011990041601478 -0.60120121249133 4.110706966112106
         children [
           USE WHEEL
         ]
@@ -139,7 +139,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 -0.06 0
-        rotation -0.8356158958979291 -0.3884230722746805 0.388424499030892 4.53375674080102
+        rotation -0.8356158958979291 -0.3884230722746811 0.3884244990308919 4.533756740801022
         children [
           USE WHEEL
         ]
@@ -195,7 +195,6 @@ DEF diff_robot Robot {
 Robot {
   children [
     Solid {
-      rotation 0 0 1 0
       children [
         Shape {
           appearance PBRAppearance {

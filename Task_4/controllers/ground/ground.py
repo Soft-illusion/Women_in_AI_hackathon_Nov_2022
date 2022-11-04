@@ -57,6 +57,6 @@ while super.step(TIME_STEP) != -1:
     y = int(width * (translation[0] + GROUND_Y / 2) / GROUND_Y) # Mapping robot translation in y axis to pixel value
     
     # Remove 10 x 10 pixel at location x,y in the display image plane to see the base "Women in AI and Robotics" logo.
-    display.fillOval( x, y, 10, 10)
+    display.fillOval( x, y, 5, 5)
 
   pass

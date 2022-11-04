@@ -195,7 +195,7 @@ DEF diff_robot Robot {
 Robot {
   children [
     Solid {
-      rotation 0 0 1 -1.57
+      rotation 0 0 1 0
       children [
         Shape {
           appearance PBRAppearance {

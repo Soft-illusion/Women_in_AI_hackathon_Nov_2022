@@ -12,8 +12,8 @@ WorldInfo {
   title "iRobot Create"
 }
 Viewpoint {
-  orientation 0.04220711910462301 0.9988542866673852 0.022553782456104475 1.7194391484223124
-  position 5.566584876306278 1.0048892954006323 39.034760830445954
+  orientation -0.47037039502286954 0.4656908354862566 0.7495890455643959 1.8647060549057992
+  position -0.03397854478034358 -5.963507100301242 11.353497656114756
   near 0.1
 }
 TexturedBackground {
@@ -29,7 +29,7 @@ CeilingLight {
   pointLightIntensity 6
 }
 DEF diff_robot Robot {
-  translation -4 4 0.0396733
+  translation -4 -4 0.0396733
   rotation 0.0010328900154534997 -0.0038604600577579577 0.9999920149612989 0.00293736
   children [
     GPS {
@@ -195,7 +195,6 @@ DEF diff_robot Robot {
 Robot {
   children [
     Solid {
-      rotation 0 0 1 -1.57
       children [
         Shape {
           appearance PBRAppearance {

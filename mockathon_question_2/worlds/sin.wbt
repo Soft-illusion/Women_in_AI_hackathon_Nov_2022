@@ -12,8 +12,8 @@ WorldInfo {
   title "iRobot Create"
 }
 Viewpoint {
-  orientation 0.016604232126773477 0.9985849377519164 0.050521496122753834 1.5817519738854628
-  position 0.4485965548841024 -1.1979869695944054 16.245669405679944
+  orientation -0.5138196604657213 0.5382081095644144 0.6680728907222551 2.024834447456196
+  position 1.2363084495617438 -3.9957624725150835 17.22277986674447
   near 0.1
 }
 TexturedBackground {
@@ -29,8 +29,8 @@ CeilingLight {
   pointLightIntensity 6
 }
 DEF diff_robot Robot {
-  translation 0.043234656958185624 -4.9882782648408615 0.039720979461571125
-  rotation -4.789899999890185e-06 -4.786389999890266e-06 0.9999999999770737 2.09733
+  translation -4.9 0.0774321 0.039721
+  rotation 1.1307671648220746e-09 2.079022491720665e-09 0.9999999999999999 0
   children [
     GPS {
     }
@@ -49,7 +49,7 @@ DEF diff_robot Robot {
     }
     DEF WHEEL1 HingeJoint {
       jointParameters HingeJointParameters {
-        position 5558.693513038207
+        position 5560.933513033018
         axis 0 1 0
         anchor 0.05 0.06 0
       }
@@ -60,7 +60,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 0.06 0
-        rotation -0.44158182884916963 0.6344298745646029 -0.6344322049598088 3.9732526593784034
+        rotation -0.9757667074427786 -0.15472420104119858 0.1547247693759534 4.687856018076553
         children [
           DEF WHEEL Shape {
             appearance PBRAppearance {
@@ -82,7 +82,7 @@ DEF diff_robot Robot {
     }
     DEF WHEEL2 HingeJoint {
       jointParameters HingeJointParameters {
-        position 6026.251744404982
+        position 6028.491744396439
         axis 0 1 0
         anchor 0.05 -0.06 0
       }
@@ -93,7 +93,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation 0.05 -0.06 0
-        rotation -0.8951776073943921 -0.315163704694613 0.31516486235432145 4.601877800397627
+        rotation -0.07947644672921723 -0.7048687269323555 0.704871316062768 3.3002115539241252
         children [
           USE WHEEL
         ]
@@ -105,7 +105,7 @@ DEF diff_robot Robot {
     }
     DEF WHEEL3 HingeJoint {
       jointParameters HingeJointParameters {
-        position 5558.9157570495845
+        position 5561.155757042348
         axis 0 1 0
         anchor -0.05 0.06 0
       }
@@ -116,7 +116,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 0.06 0
-        rotation -0.5264189011574351 0.6011990041601477 -0.6012012124913301 4.110706966112106
+        rotation -0.9319920006062016 -0.2563107763831893 0.25631171786693036 4.64201242603907
         children [
           USE WHEEL
         ]
@@ -128,7 +128,7 @@ DEF diff_robot Robot {
     }
     DEF WHEEL4 HingeJoint {
       jointParameters HingeJointParameters {
-        position 6026.444955519259
+        position 6028.684955510667
         axis 0 1 0
         anchor -0.05 -0.06 0
       }
@@ -139,7 +139,7 @@ DEF diff_robot Robot {
       ]
       endPoint Solid {
         translation -0.05 -0.06 0
-        rotation -0.8356158958979291 -0.3884230722746805 0.388424499030892 4.53375674080102
+        rotation -0.011082989235204614 -0.7070620533585197 0.7070646505448042 3.1637576431439163
         children [
           USE WHEEL
         ]
@@ -195,7 +195,6 @@ DEF diff_robot Robot {
 Robot {
   children [
     Solid {
-      rotation 0 0 1 -1.57
       children [
         Shape {
           appearance PBRAppearance {
@@ -214,7 +213,6 @@ Robot {
     }
     Display {
       translation 0 0 0.01
-      rotation 0 0 1 1.57
       children [
         Shape {
           appearance PBRAppearance {

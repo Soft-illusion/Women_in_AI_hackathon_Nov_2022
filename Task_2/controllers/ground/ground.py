@@ -53,8 +53,8 @@ while super.step(TIME_STEP) != -1:
 
   if draw:  # Enable robot coloring ONLY if initially no key is pressed or P is pressed ; stop colouring if O is pressed.
     translation = translationField.getSFVec3f() #Fetch robot location to color at that location
-    x = int(height * (translation[1] + GROUND_X / 2) / GROUND_X) # Mapping robot translation in x axis to pixel value
-    y = int(width * (translation[0] + GROUND_Y / 2) / GROUND_Y) # Mapping robot translation in y axis to pixel value
+    y = int(height * (-translation[1] + GROUND_X / 2) / GROUND_X) # Mapping robot translation in x axis to pixel value
+    x = int(width * (translation[0] + GROUND_Y / 2) / GROUND_Y) # Mapping robot translation in y axis to pixel value
     
     # Remove 10 x 10 pixel at location x,y in the display image plane to see the base "Women in AI and Robotics" logo.
     display.fillOval( x, y, 10, 10)
